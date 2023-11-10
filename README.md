@@ -1,11 +1,104 @@
-# odev-1
-Ödev
-1. JavaScript nedir ve tarihsel gelişiminden bahsedin
-2. Java ile javascript arasındaki fark nedir
-3. Javascript teki veri tipleri nelerdir açıklayınız
-4. null ile undefined arasıdaki fark nedir açıklayınız
-5. NaN nedir açıklayınız
-6. Javascript’te yorum satırı eklemenin kaç farklı yolu vardır
+**1. JavaScript nedir ve tarihsel gelişiminden bahsedin:**
+JavaScript, 1995 yılında bir Netscape çalışanı olan Brandan Eich tarafından geliştirilmiştir. İlk ortaya çıktığı dönemde söz konusu yazılımın adı Mocha idi. Sonradan Mona adını alan yazılım, zaman içerisinde LiveScript ve en son da JavaScript adı ile anılmıştır. Yazılım ilk geliştirildiği dönemde çok sınırlı bir işleve sahipti. Fakat zaman içerisinde web dünyasında yaşanan gelişmeler de dikkate alınarak günümüzdeki halini almıştır. 
+
+JavaScript, ortaya çıktığı günden bugüne inanılmaz bir hızla gelişimini sürdürmüştür. 2016 yılına gelindiğinde ise web sitelerinin yaklaşık %92’lik kısmı bu yazılımı kullanmaya başlamıştır. Sadece 20 yıl gibi kısa bir sürede büyük bir başarıya imza atan JavaScript, büyük bir yazılım dili olmayı başarmıştır
+
+
+**2. Java ile javascript arasındaki fark nedir?**
+- Java bir OOP programlama dilidir, Java Script bir OOP komut listesi oluşturma dilidir.
+- Java, sanal makinede veya tarayıcıda çalışan uygulamalar oluşturur, JavaScript kodu sadece tarayıcıda çalıştırılır.
+- Java kodunun derlenmesi gerekir, JavaScript kodları metinlerden oluşur.
+- Farklı eklentiler gerektirirler.
+
+**3. Javascript teki veri tipleri nelerdir açıklayınız:**
+1. **String(Metin):** Metin verilerini temsil eder.
+
+    ```javascript
+    let metin = "Merhaba, Dünya!";
+    console.log(metin);
+    ```
+2. **Number(Sayı):** Tamsayılar veya ondalık sayılar gibi sayısal değerleri temsil eder.
+
+    ```javascript
+    let sayi = 42;
+    let sayi2= 3.14
+    console.log(sayi,sayi2);
+    ```
+3. **Boolean (Mantıksal Değer):**
+"true" veya "false" gibi iki değeri temsil eder.
+
+    ```javascript
+    let dogruMu = true;
+    console.log(dogruMu);
+    ```
+4. **Array(Dizi):** Bir dizi içinde birden çok değeri sıralar.
+
+    ```javascript
+    let dizi = [1, 2, 3, 4];
+    console.log(dizi);
+    ```
+5. **Object (Nesne):** İsimlendirilmiş özelliklerle ilişkilendirilmiş bir dizi değeri temsil eder.
+
+    ```javascript
+    let insan = { ad: "John", yaş: 30 };
+    console.log(insan.ad); // John
+    console.log(insan.yaş); // 30
+    ```
+6. **Undefined:** Bir değişkenin değeri atanmamışsa veya bir fonksiyon bir değer döndürmezse, bu değer atanır.
+
+    ```javascript
+    let x;
+    console.log(x); // undefined
+    ```
+7. **Null:** Bir değişkenin değerini bilinçli olarak boş bırakmak için kullanılır.
+
+    ```javascript
+    let y = null;
+    console.log(y); // null
+    ```
+8. **Symbol:** Benzersiz ve değişmez bir veri tipini temsil eder.
+
+    ```javascript
+    const mySymbol = Symbol('açıklama');
+    console.log(mySymbol);
+    ```
+9. **Function(Fonksiyon):** Bir fonksiyon, bir işlem veya işlevi temsil eder.
+
+    ```javascript
+    function topla(a, b) {
+    return a + b;
+    }
+
+    let sonuc = topla(3, 5);
+    console.log(sonuc); // 8
+
+    ```
+
+**4. null ile undefined arasıdaki fark nedir açıklayınız:**  Undefined,daha önce hiç referans alınmadığı, “değer yok” anlamına gelir.
+
+Null,varlığın bilindiği yer, ancak değerin ne olduğu bilinmemektedir.
+
+```javascript
+var x; // Undefined değer
+var y = null;  // Null değer
+```
+**5. NaN nedir açıklayınız:** Not a number yani sayısal olmayan bir değer demektir.
+
+```javascript
+var y = 3 + 'x'; // Number(y) yapmaya çalıştığımızda NaN değerini almış oluruz.
+```
+**6. Javascript’te yorum satırı eklemenin kaç farklı yolu vardır?** Çoklu satır ve tek satır olarak yorum ekleyebiliriz.
+
+```javascript
+// Tek satır yorumlar için
+
+/* Birden fazla
+satır
+yorumlar için *\
+```
+
+
+
 7. Global değişken ne demektir açıklayınız
 8. Javascript’te this anahtar kelimesi nedir açıklayınız
 9. == ile === farkını örnekler ile açıklayınız
